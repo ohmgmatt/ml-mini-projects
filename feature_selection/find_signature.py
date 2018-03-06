@@ -55,3 +55,5 @@ for x, i in enumerate(clf.feature_importances_):
         number = x
 print number
 print importance
+
+print vectorizer.get_feature_names()[number]
