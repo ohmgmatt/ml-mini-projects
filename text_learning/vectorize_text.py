@@ -52,7 +52,8 @@ for name, from_person in [("sara", from_sara), ("chris", from_chris)]:
             email_msg = parseOutText(email)
             ### use str.replace() to remove any instances of the words
             ### ["sara", "shackleton", "chris", "germani"]
-            mapping = [ ('sara', ''), ('shackleton', ''), ('chris',''),('germani',''),('sshacklensf','')]
+            mapping = [ ('sara', ''), ('shackleton', ''), ('chris',''),('germani',''),
+            ('sshacklensf',''), ('cgermannsf','')]
             for k, v in mapping:
                 email_msg = email_msg.replace(k, v)
 
