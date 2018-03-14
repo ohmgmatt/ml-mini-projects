@@ -32,13 +32,14 @@ from sklearn import cross_validation
 features_train, features_test, labels_train, labels_test = cross_validation.train_test_split(
 features, labels, test_size = .3, random_state = 42)
 
-from skle
-arn import tree
+from sklearn import tree
 
 clf = tree.DecisionTreeClassifier()
 clf.fit(features_train, labels_train)
 pred = clf.predict(features_test)
-
+print(pred)
+print(labels_test)
+print (pred + labels_test)
 from sklearn.metrics import accuracy_score
 acc = accuracy_score(pred, labels_test)
 
