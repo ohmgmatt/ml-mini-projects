@@ -40,7 +40,13 @@ pred = clf.predict(features_test)
 print(pred)
 print(labels_test)
 print (pred + labels_test)
-from sklearn.metrics import accuracy_score
-acc = accuracy_score(pred, labels_test)
 
+from sklearn import metrics
+acc = metrics.accuracy_score(pred, labels_test)
 print(acc)
+
+precision = metrics.precision_score(labels_test, pred)
+print(precision)
+
+recall = metrics.recall_score(labels_test, pred)
+print(recall)
